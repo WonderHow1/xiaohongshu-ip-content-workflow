@@ -1,0 +1,13 @@
+interface:
+  display_name: "小红书热点×IP内容工作流"
+  short_description: "热点选题与统一 IP 内容创作，支持多种图文形式及依赖补装"
+  default_prompt: "使用 $xiaohongshu-ip-content-studio，检查并安装缺失的既定技能依赖，然后为我的账号 IP 研究当前热点，先给我候选选题，选定后完成统一风格的图文。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "signaldig"
+      description: "SignalDig unified social research service"
+      transport: "streamable_http"
+      url: "https://mcp.signaldig.com/mcp"
+policy:
+  allow_implicit_invocation: true

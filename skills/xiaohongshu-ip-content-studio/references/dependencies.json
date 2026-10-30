@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-10-30",
+  "skills": [
+    {
+      "name": "research-growth-signals",
+      "install_kind": "github",
+      "repo": "daily-growth-signals/seo-signal-skills",
+      "path": "skills/research-growth-signals",
+      "ref": "v2.2.0",
+      "source_url": "https://github.com/daily-growth-signals/seo-signal-skills/tree/v2.2.0/skills/research-growth-signals",
+      "official_setup_url": "https://signaldig.com/agent-setup"
+    },
+    {
+      "name": "xiaohongshu-post-creator",
+      "install_kind": "github",
+      "repo": "daily-growth-signals/social-marketing-skills",
+      "path": "skills/xiaohongshu-post-creator",
+      "ref": "main",
+      "source_url": "https://github.com/daily-growth-signals/social-marketing-skills/tree/main/skills/xiaohongshu-post-creator"
+    },
+    {
+      "name": "imagegen",
+      "install_kind": "client_builtin",
+      "requires_native_tool": true
+    }
+  ],
+  "connections": [
+    {
+      "name": "SignalDig",
+      "install_kind": "client_connection_flow",
+      "official_setup_url": "https://signaldig.com/agent-setup",
+      "catalog_query": "SignalDig",
+      "requires_user_authorization": true
+    }
+  ]
+}
